@@ -1,0 +1,603 @@
+@font-face {
+    font-family: NewAmsterdam-Regular;
+    src: url(../assets/fonts/New_Amsterdam/NewAmsterdam-Regular.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url("../assets/background/tijolos.jpg");
+    font-family: NewAmsterdam-Regular;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+  
+main{
+    width: 100%;
+    height: 910px;
+    
+    .container{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+
+        .container__title{
+            width: 700px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            background-color: #F7C942;
+            border-radius:7px;
+            box-shadow: 5px 3px 10px black;
+            
+        }
+        .container__search{
+            width: 700px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            
+
+            .container__search__cep{
+                width: 550px;
+                height: 70px;
+                border-radius:7px;
+                border: none;
+                font-size: 20px;
+                box-shadow: 5px 3px 10px black;
+                font-family: NewAmsterdam-Regular;
+                padding-left: 5%;
+            }
+
+            .container__search__button{
+                width: 150px;
+                height: 70px;
+                border-radius:7px;
+                border: none;
+                font-size: 20px;
+                box-shadow: 5px 3px 10px black;
+                background-color: white;
+                font-family: NewAmsterdam-Regular;
+            }
+        }
+        .container__Address{
+            background-color: #c4c4c4;
+            border-radius:7px;
+            box-shadow: 5px 3px 10px black;
+            width: 700px;
+            height: 300px;
+           
+            h2{
+                margin-left: 55px;
+                margin-top: 24px;
+            }
+
+            .container__Address__rigt {
+                display: flex;
+            }
+            
+        }
+    }
+}
+
+/* tela notbook: */
+@media only screen and (max-width: 1370px){ 
+
+    main{
+        width: 100%;
+        height: 500px;
+        
+
+        container{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+/* tela tablet Galaxy Tab S7 :*/
+@media only screen and (max-width: 930px){
+   main{
+    width: 100%;
+    height: 1170px;
+
+        .container{
+            width: 100%;
+            height: 100%;
+            
+            .container__title, .container__search, .container__Address {
+                width: 600px;
+            }
+        }
+   }
+}
+
+/* tela tablet menor iPad Air 4:*/
+@media only screen and (max-width: 830px){
+    main{
+        width: 100%;
+        height: 1000px;
+
+        .container__Address{
+            h2{
+                font-size: 27px;
+            }
+        }
+    }
+}
+
+/* tela tablet menor2 iPad Mini:*/
+@media only screen and (max-width: 790px){
+    main{
+        width: 100%;
+        height: 900px;
+    }
+}
+
+/* tela celular: iPhone 13 PRO MAX vertical*/
+@media only screen and (max-width: 450px){
+    main{
+        width: 100%;
+        height: 100%;
+    
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            gap: 15px;
+            
+
+            .container__title{
+                width: 400px;
+                height: 80px;
+                font-size: 25px;
+            }
+
+            .container__search{
+                width: 400px;
+
+                .container__search__cep{
+                    font-size: 23px;
+                }
+
+                .container__search__button{
+                    font-size: 17px;
+                }
+            }
+
+            .container__Address{
+                width: 400px;
+                height: 400px;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                
+                h2{
+                    font-size: 25px;
+                    margin: 0;
+                    margin-left: 20px;
+                }
+            }
+            
+        }
+    }
+}
+
+/* tela celular: iPhone 13 PRO MAX horizontal*/
+@media only screen and (max-width: 930px) and (max-height: 450px ){
+    main{
+        width: 100%;
+        height: 100%;
+
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            gap: 15px;
+
+            .container__title{
+                width: 500px;
+                height: 50px;
+
+                h1{
+                    font-size: 30px;
+                }
+            }
+
+            .container__search{
+                width: 500px;
+                height: 50px;
+
+                .container__search__cep{
+                    height: 50px;
+                }
+
+                .container__search__button{
+                    height: 50px;
+                    font-size: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .container__Address{
+                width: 500px;
+                height: 250px;
+
+                h2{
+                    font-size: 19px;
+                    margin-left: 20px;
+                }
+
+                
+            }
+        }
+    }
+}
+
+/* tela celular: iPhone 13 PRO vertical*/
+@media only screen and (max-width: 400px){
+    main{
+        width: 100%;
+        height: 100%;
+
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            gap: 25px;
+
+            .container__title{
+                width: 350px;
+                height: 70px;
+                font-size: 20px;
+            }
+
+            .container__search{
+                width: 350px;
+                height: 60px;
+                
+                .container__search__cep{
+                    font-size: 20px;
+                }
+
+                .container__search__button{
+                    font-size: 15px;
+                }
+            }
+
+            .container__Address{
+                width: 350px;
+
+                h2{
+                    font-size: 25px;
+                }
+
+                .container__Address__state, .container__Address__city,
+                .container__Address__neighborhood, .container__Address__road{
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+
+/* tela celular: iPhone 13 PRO horizontal*/
+@media only screen and (max-width: 850px) and (max-height:400px){
+    main{
+        width: 100%;
+        height: 100%;
+
+        .container{
+            width: 100%;
+            height: 100%;
+            padding-top: 35px;
+            display: flex;
+            gap: 25px;
+
+            .container__title{
+                height: 60px;
+            }
+
+            .container__search{
+                height: 25px;
+            }
+
+            .container__Address{
+                height: 250px;
+
+                h2{
+                    font-size: 20px;
+                }
+
+            }
+        }
+    }
+}
+
+/* tela celular: iPhone 13 mini*/
+@media only screen and (max-width: 390px){
+    main{
+       width: 100%;
+       height: 100%;
+
+       .container{
+            width: 100%;
+            height: 100%;
+
+            .container__title{
+                width: 300px;
+            }
+
+            .container__search{
+                width: 300px;
+                height: 50px;
+
+                .container__search__cep{
+                    height: 100%;
+                }
+
+                .container__search__button{
+                    height: 100%;
+                    font-size: 12px;
+                }
+                
+            }
+
+            .container__Address{
+                width: 300px;
+
+                h2{
+                    font-size: 25px;
+                }
+
+                .container__Address__state, .container__Address__city,
+                .container__Address__neighborhood, .container__Address__road{
+                    width: 200px;
+                }
+            }
+        }
+
+        
+    }
+}
+
+/* tela celular: iPhone 12 mini horizontal*/
+@media only screen and (max-width: 780px) and (max-height:370px){
+   main{
+        width: 100%;
+        height: 100%;
+
+        .container{
+            width: 100%;
+            height: 100%;
+            padding-top: 50px;
+
+            .container__title{
+                width: 400px;
+                height: 50px;
+            }
+
+            .container__search{
+                width: 400px;
+            }
+
+            .container__Address{
+                width: 400px;
+            }
+        }
+    }
+}
+
+/* tela celular: iPhone 11 PRO MAX*/
+@media only screen and (max-width: 420px){
+    main{
+        width: 100%;
+        height: 100%;
+
+        .container{
+            width: 100%;
+            height: 100%;
+
+            .container__title, .container__search{
+                width: 350px;
+            }
+
+            .container__Address{
+                width: 350px;
+
+                .container__Address__state, .container__Address__city,
+                .container__Address__neighborhood, .container__Address__road{
+                    width: 250px;
+                }
+            }
+        }
+    }
+   
+}
+
+/* tela celular: iPhone SE */
+@media only screen and (max-width: 330px){
+    main{
+        width: 100%;
+        height: 100%;
+
+        .container{
+            width: 100%;
+            height: 100%;
+            padding-top: 15px;
+            display: flex;
+            gap: 15px;
+
+            .container__title{
+                width: 250px;
+                height: 55px;
+                font-size: 15px;
+            }
+
+            .container__search{
+                width: 250px;
+                height: 40px;
+
+                .container__search__cep{
+                    font-size: 15px;
+                }
+
+                .container__search__button{
+                    font-size: 10px;
+                }
+            }
+
+            .container__Address{
+                width: 250px;
+
+                h2{
+                    font-size: 20px;
+                }
+
+                .container__Address__state, .container__Address__city,
+                .container__Address__neighborhood, .container__Address__road{
+                    width: 150px;
+                }
+            }
+        }
+    }
+   
+}
+
+/* tela celular: iPhone SE horizontal*/
+@media only screen and (max-width: 570px) and (max-height:330px){
+    main{
+       width: 100%;
+       height: 100%;
+
+       .container{
+            width: 100%;
+            height: 100%;
+            padding-top: 70px;
+
+            .container__title{
+                width: 350px;
+                height: 50px;
+            }
+
+            .container__search{
+                width: 350px;
+
+                .container__search__cep{
+                    height: 40px;
+                    font-size: 15px;
+                }
+
+                .container__search__button{
+                    height: 40px;
+                    font-size: 12px;
+                }
+            }
+
+            .container__Address{
+                width: 350px;
+            }
+        }
+    }
+   
+}
+
+/* tela celular: Xiome 12 Vertical*/
+@media only screen and (max-width: 360px){
+    main{
+        width: 100%;
+        height: 100%;
+
+        .container{
+            width: 100%;
+            height: 100%;
+            padding-top: -10px;
+
+            .container__title{
+                width: 300px;
+                height: 75px;
+            }
+
+            .container__search{
+                width: 300px;
+                height: 60px;
+
+                .container__search__button{
+                    font-size: 15px;
+                }
+            }
+
+            .container__Address{
+                width: 300px;
+
+                .container__Address__state, .container__Address__city,
+                .container__Address__neighborhood, .container__Address__road{
+                    width: 170px;
+                }
+            }
+        }
+    }
+   
+}
+
+/* tela celular: xiome 12 horizontal*/
+@media only screen and (max-width: 810px) and (max-height:360px){
+    main{
+       width: 100%;
+       height: 100%;
+
+       .container{
+            width: 100%;
+            height: 100%;
+            padding-top: 70px;
+           
+        }
+    }
+   
+}
+
+/* tela celular: Galaxy Z Flip3 horizontal*/
+@media only screen and (max-width: 890px) and (max-height:360px){
+    main{
+       width: 100%;
+       height: 100%;
+
+       .container{
+            width: 100%;
+            height: 100%;
+            padding-top: 70px;
+           
+        }
+    }
+   
+}
+
+/* tela celular: Oneplus Nord 2 horizontal*/
+@media only screen and (max-width: 930px) and (max-height:412px){
+    main{
+       width: 100%;
+       height: 100%;
+
+       .container{
+            width: 100%;
+            height: 100%;
+            padding-top: 70px;
+           
+        }
+    }
+   
+}
+
